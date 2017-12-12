@@ -1,33 +1,27 @@
 {
   "name": "RxJs-demos",
-  "version": "3.0.0",
-  "description": "RxJs Demos",
-  "author": "Christoph von Gellhorn",
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress --config ./webpack.config.dev.js",
-    "old_dev": "NODE_ENV=dev webpack-dev-server --progress --config ./webpack.config.dev.js",
-    "build": "webpack -p --progress --config webpack.config.build.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "000": "poi ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notetech/RxJs-demos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/notetech/RxJs-demos/issues"
+  },
+  "homepage": "https://github.com/notetech/RxJs-demos#readme",
+  "devDependencies": {
+    "poi": "^9.5.11"
   },
   "dependencies": {
-    "jquery": "^3.2.1",
-    "lodash": "^4.17.4",
-    "rxjs": "^5.4.2"
-  },
-  "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.1",
-    "babel-preset-es2015": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.16",
-    "css-loader": "^0.28.3",
-    "ejs-loader": "^0.3.0",
-    "file-loader": "^0.11.2",
-    "html-webpack-plugin": "^2.29.0",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "url-loader": "^0.5.9",
-    "webpack": "^3.0.0",
-    "webpack-dev-server": "^2.5.0"
+    "rxjs": "^5.5.5"
   }
 }

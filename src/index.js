@@ -1,25 +1,17 @@
-/**
- * Application entry point
- */
 
-// Load application styles
-import 'styles/index.scss';
-
-// ================================
-// START YOUR APP HERE
-// ================================
+import { log, design } from './core';
 import Rx from 'rxjs/Rx';
 
-// ================================
-// First Example
-
-/* Observable from event */
-var button = document.querySelector('button');
-button.textContent = 0;
-Rx.Observable.fromEvent(button, 'click')
-  .throttleTime(5000)
-  .scan((count) => count+1 , 0)
-  .subscribe((count) => {
-      console.log(`Clicked! ${count}`)
-      button.textContent = count;
-    });
+design(`
+<button>Click</button>
+`)
+let __button = document.querySelector('button');
+  Rx.Observable.fromEvent(__button, 'click')
+    //.throttleTime(5000) // Delay 5 second 
+    .scan((count) => count+1 , 0) // Modify data
+    .subscribe((count) => {
+        console.log(`Clicked! ${count}`)
+        log(count)
+        log({hello:'msg'})
+        __button.textContent = count;
+      });
