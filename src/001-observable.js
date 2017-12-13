@@ -5,15 +5,21 @@ design(`
     <h1>Create Observable</h1>
 `)
 
-var observable = Rx.Observable.create(function (observer) {
+
+
+var observable = Rx.Observable.create((observer) =>{
     observer.next(1);
     observer.next(2);
     observer.next(3);
     setTimeout(() => {
       observer.next(4);
       observer.complete();
-    }, 1000);
+    }, 3000);
   });
+
+
+
+  
 
   observable.subscribe(
       data => {
