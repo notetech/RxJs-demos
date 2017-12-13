@@ -1,4 +1,4 @@
-import '../styles/index.css'
+import './styles/index.css'
 import Rx from 'rxjs/Rx';
 let html = `
   <div class="container">
@@ -10,6 +10,9 @@ let html = `
           
       </div>
       <div class="area-output" id="___output">
+        <div class="__output_header">
+          <div class="__output_title">Console</div><button type="button" id="___output_clear">CLEAR</button>
+        </div>
       </div>
     </main>
    
@@ -21,6 +24,20 @@ let output = document.getElementById('___output')
 
 let designDiv = document.getElementById('designDiv')
 
+
+let clearBtn = document.getElementById('___output_clear')
+
+clearBtn.addEventListener('click',(e) => {
+  let outputlines = document.querySelectorAll('.___output_line')
+
+  if(outputlines) {
+    outputlines.forEach((ol) => {
+      ol.remove();
+    })
+  } 
+
+})
+
 export const design = (html) => {
 
     designDiv.innerHTML = html;
@@ -30,7 +47,7 @@ export const design = (html) => {
 
 export const log = (data) => {
   let p = document.createElement('pre')
-  p.classList.add('output_line')
+  p.classList.add('___output_line')
   let __content = '';
   switch(typeof(data)) {
 

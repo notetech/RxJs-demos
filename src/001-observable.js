@@ -1,4 +1,9 @@
+import { design, log } from './core';
 import Rx from 'rxjs/Rx';
+
+design(`
+    <h1>Create Observable</h1>
+`)
 
 var observable = Rx.Observable.create(function (observer) {
     observer.next(1);
@@ -12,12 +17,12 @@ var observable = Rx.Observable.create(function (observer) {
 
   observable.subscribe(
       data => {
-          console.log('>', data)
+          log(data)
       },
       error => {
-          console.log('Some error')
+          log('Some error')
       },
       () => {
-          console.log('Completed')
+          log('Completed')
       }
   )

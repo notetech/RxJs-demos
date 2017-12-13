@@ -7,10 +7,9 @@ design(`
 `)
 let __button = document.querySelector('button');
   Rx.Observable.fromEvent(__button, 'click')
-    //.throttleTime(5000) // Delay 5 second 
+    .throttleTime(5000) // Delay 5 second 
     .scan((count) => count+1 , 0) // Modify data
     .subscribe((count) => {
-        console.log(`Clicked! ${count}`)
         log(count)
         log({hello:'msg'})
         __button.textContent = count;
