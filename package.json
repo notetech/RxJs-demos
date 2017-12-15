@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "000": "poi ./src/index.js",
     "001": "poi ./src/001-observable.js",
-    "002": "poi ./src/002-interval.js"
+    "002": "poi ./src/002-interval.js",
+    "003": "poi ./src/003-Subject.js"
   },
   "repository": {
     "type": "git",
