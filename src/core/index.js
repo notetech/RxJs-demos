@@ -45,22 +45,37 @@ export const design = (html) => {
 }
     
 
-export const log = (data) => {
+export const log = (data, data2 = '') => {
   let p = document.createElement('pre')
   p.classList.add('___output_line')
   let __content = '';
-  switch(typeof(data)) {
+  p.innerHTML = stringify(data)
+  console.log(data, data2)
+  if( data2 ) {
+    let span = document.createElement('span')
+    span.classList.add('___output_line2')
+    span.innerHTML = stringify(data2)
+    p.appendChild(span);
+  }
+  output.appendChild(p)
 
+
+}
+
+const stringify = (data) => {
+  let _string = '';
+  switch(typeof(data)) {
+  
     case 'object': 
-        __content = JSON.stringify(data, undefined,2);
+      _string = JSON.stringify(data, undefined,2);
         break;
     default:
-      __content = data;
-
+      _string = data;
+  
   }
-  p.innerHTML = __content;
-  console.log(data)
-  output.appendChild(p)
+
+  return _string;
+  
 }
 
 

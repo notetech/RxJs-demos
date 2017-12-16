@@ -10,7 +10,7 @@ let __button = document.querySelector('button');
     .throttleTime(5000) // Delay 5 second 
     .scan((count) => count+1 , 0) // Modify data
     .subscribe((count) => {
-        log(count)
-        log({hello:'msg'})
+        log(count,'Yep')
+        log('its working')
         __button.textContent = count;
       });

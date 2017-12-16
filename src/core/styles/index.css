@@ -58,3 +58,10 @@ main {
     font-weight: 800;
     color: #797979;
 }
+.___output_line2 {
+    color: #888;
+}
+.___output_line2::before {
+    content: ',';
+    color: #56f;
+}
