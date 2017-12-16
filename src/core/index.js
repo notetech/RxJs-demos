@@ -11,7 +11,7 @@ let html = `
       </div>
       <div class="area-output" id="___output">
         <div class="__output_header">
-          <div class="__output_title">Console</div><button type="button" id="___output_clear">CLEAR</button>
+          <div class="__output_title">LOG</div><button type="button" id="___output_clear">CLEAR</button>
         </div>
       </div>
     </main>

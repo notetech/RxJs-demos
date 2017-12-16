@@ -8,7 +8,8 @@
     "000": "poi ./src/index.js",
     "001": "poi ./src/001-observable.js",
     "002": "poi ./src/002-interval.js",
-    "003": "poi ./src/003-Subject.js"
+    "003": "poi ./src/003-Subject.js",
+    "004": "poi ./src/004-FromPromise.js"
   },
   "repository": {
     "type": "git",

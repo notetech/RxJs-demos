@@ -36,6 +36,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    background-color: #bbb;   
 }
 .__output_title {
     font-size: 18px;
