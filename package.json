@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "000": "poi ./src/index.js",
-    "001": "poi ./src/001-observable.js",
-    "002": "poi ./src/002-interval.js",
+    "000": "poi ./src/000-FromEvent.js",
+    "001": "poi ./src/001-CreateObservable.js",
+    "002": "poi ./src/002-TimerAndInterval.js",
     "003": "poi ./src/003-Subject.js",
     "004": "poi ./src/004-FromPromise.js"
   },
