@@ -9,7 +9,8 @@
     "001": "poi ./src/001-CreateObservable.js",
     "002": "poi ./src/002-TimerAndInterval.js",
     "003": "poi ./src/003-Subject.js",
-    "004": "poi ./src/004-FromPromise.js"
+    "004": "poi ./src/004-FromPromise.js",
+    "005": "poi ./src/005-Operators-map-filter.js"
   },
   "repository": {
     "type": "git",
